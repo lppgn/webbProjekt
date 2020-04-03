@@ -20,7 +20,7 @@ let currentY = 4;
 //movement
 let xMovement = 0;
 let yMovement = 0;
-moveFunction();
+update();
 let headlocation = gameBoardArray[currentX][currentY];
 headlocation.style.background = "green";
 function clickFunction() { 
@@ -41,25 +41,27 @@ function clickFunction() {
         xMovement = 0;
     }
 }
-function moveFunction(progress) {
+function update(progress) {
     // Update the state of the world for the elapsed time since last render
     progress = 1.67;
-        //head movement
-        let headlocation = gameBoardArray[currentX][currentY];
-        headlocation.style.background = "green";
-        document.addEventListener('keydown', clickFunction);
-        currentX = currentX + (xMovement);
-        currentY = currentY + (yMovement);
+    //head movement
+    var timer = setTimeout(moveFunction, 2000);
+    function moveFunction() {
+    let headlocation = gameBoardArray[currentX][currentY];
+    headlocation.style.background = "green";
+    document.addEventListener('keydown', clickFunction);
+    currentX = currentX + (xMovement);
+    currentY = currentY + (yMovement);
+    }
   }
   
   function draw() {
-    // Draw the state of the world
-  }
+}
   
   function loop(timestamp) {
     var progress = timestamp - lastRender;
   
-    moveFunction(progress);
+    update(progress);
     draw();
   
     lastRender = timestamp;
