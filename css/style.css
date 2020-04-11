@@ -1,15 +1,30 @@
 h1{
     text-align: center;
 }
-div{
-    border: 0.1mm solid black;
-    padding: 40% 10% 40% 10%;
-}
-div.gameBoardGrid{
+div.pokeGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    border: none;
-    padding: 0;
-    margin: 2% 25% 10% 25%;
+    margin: 1% 30% 0% 30%;
+    width: auto;
+    height: 100%;
+}
+.gridObject{
+    border: solid black 1px;
+    margin:0;
+    width: 100%;
+    height: auto;
+}
+p{
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+p:nth-child(-n+4){
+    font-weight: bold;
+}
+img{
+    width: 100%;
+    height: auto;
 }
