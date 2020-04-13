@@ -1,5 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@font-face {font-family: "Pokemon"; src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); }
 h1{
+    -webkit-text-fill-color: rgb(7, 7, 204);
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-width: 0.05vw;
     text-align: center;
+    font-size: 3vw;
 }
 div.pokeGrid{
     display: grid;
@@ -26,5 +32,32 @@ p:nth-child(-n+4){
 }
 img{
     width: 100%;
+    height: auto;
+}
+div.buttonGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 1% 30% 0% 30%;
+    font-size: 1vw;
+}
+button{
+    font-size: 1vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.filler{
+    border: solid yellow 2px;
+    border-radius: 100px;
+    margin: 1%;
+    font-family: "pokemon";
+    letter-spacing: 4px;
+    background-image: url("../img/Grass.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3%;
+    width: auto;
     height: auto;
 }
