@@ -40,6 +40,7 @@ function changePage (){
     pokeArray[currentDisplay].style.display = "grid";
     if(currentDisplay==0){
         buttonArray[currentDisplay].disabled = true;
+        document.getElementById("thisPokemon").innerHTML = "Bulbasaur";
     }
     else{
             buttonArray[0].disabled = false;
@@ -49,11 +50,18 @@ function changePage (){
         for (let index = 0; index < backgroundChange.length; index++) {
             backgroundChange[index].style.backgroundImage = "url('../img/Fire.png')";
         }   
+        document.getElementById("thisPokemon").innerHTML = "Charmander";
     }
     else{
             buttonArray[1].disabled = false;
             for (let index = 0; index < backgroundChange.length; index++) {
                 backgroundChange[index].style.backgroundImage = "url('../img/Grass.png')";
             }
+    }
+    if(currentDisplay == 1){
+        document.getElementById("thisPokemon").innerHTML = "Ivysaur";
+    }
+    else if(currentDisplay == 2){
+        document.getElementById("thisPokemon").innerHTML = "Venusaur";
     }
 }
