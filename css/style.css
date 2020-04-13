@@ -6,6 +6,17 @@ h1{
     -webkit-text-stroke-width: 0.05vw;
     text-align: center;
     font-size: 3vw;
+    font-family: "pokemon";
+    letter-spacing: 4px;
+}
+h2{
+    margin-left: 10%;
+font-size: 2.5vw;
+-webkit-text-fill-color: rgb(7, 7, 204);
+-webkit-text-stroke-color: yellow;
+-webkit-text-stroke-width: 0.05vw;
+font-family: "pokemon";
+letter-spacing: 4px;
 }
 div.pokeGrid{
     display: grid;
@@ -21,7 +32,7 @@ div.pokeGrid{
     width: 100%;
     height: auto;
 }
-p{
+p.gridObject{
     text-align: center;
     font-size: 1.5vw;
     padding-top: 40%;
@@ -39,10 +50,9 @@ div.buttonGrid{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: 1% 30% 0% 30%;
-    font-size: 1vw;
 }
 button{
-    font-size: 1vw;
+    font-size: 1.5vw;
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 2%;
@@ -52,12 +62,15 @@ button{
     border: solid yellow 2px;
     border-radius: 100px;
     margin: 1%;
-    font-family: "pokemon";
-    letter-spacing: 4px;
     background-image: url("../img/Grass.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3%;
     width: auto;
     height: auto;
+}
+.info{
+    font-size: 1.5vw;
+    margin-left: 10%;
+    margin-right: 10%;
 }
